@@ -159,7 +159,7 @@ export default function HowItWorksPage() {
           title="Get a verdict you can check"
           visual={
             <figure className="rounded-[16px] bg-white p-6 shadow-[0_1px_2px_rgba(15,27,45,0.06)]">
-              <figcaption className="flex items-baseline justify-between gap-4 text-sm">
+              <figcaption className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-sm">
                 <span>
                   <span className="font-mono text-slate">Task 2215</span> Bearing insert
                 </span>

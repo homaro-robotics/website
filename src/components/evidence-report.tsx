@@ -12,7 +12,7 @@ const evidence: [string, string, boolean?][] = [
 export function EvidenceReport() {
   return (
     <article className="rounded-[16px] bg-white p-6 shadow-[0_1px_2px_rgba(15,27,45,0.06)]">
-      <header className="flex items-baseline justify-between gap-4 text-sm">
+      <header className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-sm">
         <span>
           <span className="font-mono text-slate">Task 2215</span> Bearing insert, cell 3
         </span>
@@ -43,7 +43,7 @@ export function EvidenceReport() {
           {evidence.map(([k, v, missing]) => (
             <tr key={k} className={`border-t border-navy/8 ${missing ? "bg-[#FBF0DC] text-[#7A4F00]" : ""}`}>
               <td className={`py-2 ${missing ? "pl-2 font-medium" : ""}`}>{k}</td>
-              <td className={`py-2 text-right tabular-nums ${missing ? "pr-2" : ""}`}>
+              <td className={`py-2 text-right whitespace-nowrap tabular-nums ${missing ? "pr-2" : ""}`}>
                 <span className="font-mono">{v}</span>
                 {missing && <span className="font-medium"> — Missing</span>}
               </td>
