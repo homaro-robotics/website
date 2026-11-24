@@ -6,7 +6,7 @@ export const site = {
   description:
     "Robots log SUCCESS. Homaro verifies the physical task was actually done correctly, within spec and without damage, and explains why when it wasn't.",
   contactEmail: "prabhsingh@homarorobotics.com",
-  bookingUrl: "https://cal.com/homaro", // TODO: replace with real cal.com / Calendly link
+  bookingUrl: "https://cal.com/prabh-singh-bnex7o/30min",
 };
 
 export const nav = [{ href: "/how-it-works", label: "How it works" }];
