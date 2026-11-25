@@ -21,7 +21,7 @@ export function SiteFooter() {
           <BookCall />
         </div>
       </div>
-      <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-paper/10 px-6 py-12 sm:flex-row sm:items-start sm:justify-between">
+      <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-paper/10 px-6 pt-12 pb-8 sm:flex-row sm:items-start sm:justify-between">
         <Image src="/brand/homaro-lockup-white.svg" alt={site.name} width={140} height={49} />
         <nav className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-mist">
           {nav.map((item) => (
@@ -31,6 +31,7 @@ export function SiteFooter() {
           <a href={`mailto:${site.contactEmail}`} className="hover:text-paper">{site.contactEmail}</a>
         </nav>
       </div>
+      <p className="mx-auto max-w-7xl px-6 pb-8 text-xs text-mist">Homaro Robotics is a brand of Zylectra LLP</p>
     </footer>
   );
 }
